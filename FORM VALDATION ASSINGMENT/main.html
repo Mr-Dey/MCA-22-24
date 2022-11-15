@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+
+    <!-- this is css -->
+    <link rel="stylesheet" href="form_validation_style.css">
+</head>
+
+<body>
+
+    <h1>FORM</h1>
+    <div class="form">
+        <form name="myForm" onsubmit="return validationForm()">
+
+            <!-- student name input -->
+            <div class="Formlayout" id="stu_name">
+                <h3><b><u>STUDENT NAME</u></b></h3>
+                <b>FIRST NAME</b> : <input type="text" name="f_name" >
+                <b><span class="formError"></span></b>
+
+                <b>MIDDLE NAME</b> : <input type="text" name="m_name">
+                <b><span class="optional"> <i>(optional)</i> </span></b>
+
+                <b>LAST NAME</b> : <input type="text" name="l_name">
+                <b><span class="formError"></span>
+            </div><br><br>
+
+            <!-- mothers name input -->
+            <div class="Formlayout" id="stu_mo_name">
+                <h3><b><u>MOTHER'S NAME</u></b></h3>
+                <b>FIRST NAME</b> : <input type="text" name="mof_name">
+                <b><span class="formError"></span></b>
+
+                <b>MIDDLE NAME</b> : <input type="text" name="mom_name">
+                <b><span class="optional"> <i>(optional)</i> </span></b>
+
+                <b>LAST NAME</b> : <input type="text" name="mol_name">
+                <b><span class="formError"></span></b>
+            </div><br><br>
+
+            <!-- fathers name input -->
+            <div class="Formlayout" id="stu_fa_name">
+                <h3><b><u>FATHER'S NAME</u></b></h3>
+                <b>FIRST NAME</b> : <input type="text" name="faf_name">
+                <b><span class="formError"></span></b>
+
+                <b>MIDDLE NAME</b> : <input type="text" name="fam_name">
+                <b><span class="optional"> <i>(optional)</i> </span></b>
+
+                <b>LAST NAME</b> : <input type="text" name="fal_name">
+                <b><span class="formError"></span></b>
+            </div><br><br>
+            
+            <!-- this is a radio chekbox for ug pg selection -->
+            <div class="edu_radio_selection" id="ug_pg">
+            <label for="ug">
+                EDUCATIONS QUALIFICATION
+                <input type="radio" value="UG" name="ug_pg_radio" id="ug"> UG
+            </label>
+            <label for="pg">
+                <input type="radio" value="PG" name="ug_pg_radio" id="pg"> PG
+            </label>
+            </div><br><br>  
+
+            <!-- address input-->
+            <div class="Formlayout" id="stu_address">
+                <b>ADDRESS</b> : <input type="text" name="address">
+                <b><span class="formError"></span></b>
+            </div><br>
+
+            <!-- hobbies input-->
+            <div class="Formlayout" id="stu_hobbies">
+                <b>HOBBIES</b> : <input type="text" name="hobbies">
+                <b><span class="formError"></span></b>
+            </div><br>
+
+            <!-- submit button -->
+            <input class="Button" type="submit" value="SUBMIT" id="submit_b">
+
+        </form>
+    </div>
+
+    <!-- this is java script -->
+    <script src="error_handeler_script.js"></script>//
+</body>
+
+</html>
