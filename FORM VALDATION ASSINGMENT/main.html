@@ -15,67 +15,67 @@
 
     <h1>FORM</h1>
     <div class="form">
-        <form name="myForm" onsubmit="return validationForm()">
+        <form id="MainForm" name="myForm" onsubmit="return validationForm()" method="post">
 
             <!-- student name input -->
             <div class="Formlayout" id="stu_name">
                 <h3><b><u>STUDENT NAME</u></b></h3>
-                <b>FIRST NAME</b> : <input type="text" name="f_name" >
+                <b>FIRST NAME</b> : <input type="text" name="f_name" placeholder="firstname here*" id="f_name">
                 <b><span class="formError"></span></b>
 
-                <b>MIDDLE NAME</b> : <input type="text" name="m_name">
+                <b>MIDDLE NAME</b> : <input type="text" name="m_name" placeholder="middlename">
                 <b><span class="optional"> <i>(optional)</i> </span></b>
 
-                <b>LAST NAME</b> : <input type="text" name="l_name">
+                <b>LAST NAME</b> : <input type="text" name="l_name" placeholder="lastname here*" id="l_name">
                 <b><span class="formError"></span>
             </div><br><br>
 
             <!-- mothers name input -->
             <div class="Formlayout" id="stu_mo_name">
                 <h3><b><u>MOTHER'S NAME</u></b></h3>
-                <b>FIRST NAME</b> : <input type="text" name="mof_name">
+                <b>FIRST NAME</b> : <input type="text" name="mof_name" placeholder="firstname here*" id="mof_name">
                 <b><span class="formError"></span></b>
 
-                <b>MIDDLE NAME</b> : <input type="text" name="mom_name">
+                <b>MIDDLE NAME</b> : <input type="text" name="mom_name" placeholder="middlename">
                 <b><span class="optional"> <i>(optional)</i> </span></b>
 
-                <b>LAST NAME</b> : <input type="text" name="mol_name">
+                <b>LAST NAME</b> : <input type="text" name="mol_name" placeholder="lastname here*" id="mol_name">
                 <b><span class="formError"></span></b>
             </div><br><br>
 
             <!-- fathers name input -->
             <div class="Formlayout" id="stu_fa_name">
                 <h3><b><u>FATHER'S NAME</u></b></h3>
-                <b>FIRST NAME</b> : <input type="text" name="faf_name">
+                <b>FIRST NAME</b> : <input type="text" name="faf_name" placeholder="firstname here*" id="faf_name">
                 <b><span class="formError"></span></b>
 
-                <b>MIDDLE NAME</b> : <input type="text" name="fam_name">
+                <b>MIDDLE NAME</b> : <input type="text" name="fam_name" placeholder="middlename">
                 <b><span class="optional"> <i>(optional)</i> </span></b>
 
-                <b>LAST NAME</b> : <input type="text" name="fal_name">
+                <b>LAST NAME</b> : <input type="text" name="fal_name" placeholder="lastname here*" id="fal_name">
                 <b><span class="formError"></span></b>
             </div><br><br>
-            
+
             <!-- this is a radio chekbox for ug pg selection -->
             <div class="edu_radio_selection" id="ug_pg">
-            <label for="ug">
-                EDUCATIONS QUALIFICATION
-                <input type="radio" value="UG" name="ug_pg_radio" id="ug"> UG
-            </label>
-            <label for="pg">
-                <input type="radio" value="PG" name="ug_pg_radio" id="pg"> PG
-            </label>
-            </div><br><br>  
+                <label for="ug">
+                    EDUCATIONS QUALIFICATION
+                    <input type="radio" value="UG" name="ug_pg_radio" id="ug"> UG
+                </label>
+                <label for="pg">
+                    <input type="radio" value="PG" name="ug_pg_radio" id="pg"> PG
+                </label>
+            </div><br><br>
 
             <!-- address input-->
             <div class="Formlayout" id="stu_address">
-                <b>ADDRESS</b> : <input type="text" name="address">
+                <b>ADDRESS</b> : <input type="text" name="address" placeholder="your full address here*">
                 <b><span class="formError"></span></b>
             </div><br>
 
             <!-- hobbies input-->
             <div class="Formlayout" id="stu_hobbies">
-                <b>HOBBIES</b> : <input type="text" name="hobbies">
+                <b>HOBBIES</b> : <input type="text" name="hobbies" placeholder="your hobbies*">
                 <b><span class="formError"></span></b>
             </div><br>
 
@@ -86,7 +86,7 @@
     </div>
 
     <!-- this is java script -->
-    <script src="error_handeler_script.js"></script>//
+    <script src="error_handeler_script.js"></script>
 </body>
 
 </html>
