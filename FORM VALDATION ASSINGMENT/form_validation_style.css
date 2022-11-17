@@ -44,17 +44,19 @@ h1 {
 }
 
 .Formlayout input::placeholder {
-    text-align:center;
+    text-align: center;
     font-family: monospace;
-    color:grey;
+    color: grey;
     font-size: .80rem;
 }
 
-/* error message */
-.formError {
+/*All error messages selected by id*/
+#error_alart {
     color: red;
     font-size: 15px;
 }
+
+
 
 .optional {
     margin: 0;
@@ -68,7 +70,7 @@ h1 {
     color: grey;
 }
 
-/* selected specific id of address bar to increase width */
+/* selected id of address bar to increase width */
 #stu_address input {
     width: 60%;
 }
