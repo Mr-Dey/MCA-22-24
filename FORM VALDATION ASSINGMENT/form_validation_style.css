@@ -3,38 +3,54 @@
     padding: 0;
 }
 
+/* Added background image for teture effect. Source:unsplash.com*/
+
 body {
     padding: 10px 50px;
-    background-image: url("https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-image: url("https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+    background-position: center;
+    background-size: contain;
 }
 
+/* form class text aligned and font style changed */
 .form {
-    text-align:center;
+    text-align: center;
     width: auto;
+    font-family: monospace;
 }
 
 h1 {
-    text-align:center;
-    font-size: 50px;
-    width: 100%;
+    text-align: center;
+    font-size: 4rem;
     color: brown;
+    font-weight: bolder;
     padding-bottom: 5%;
+    font-family: monospace;
 }
 
 .Formlayout {
-    font-size: 15px;
+    font-size: 1rem;
     font-style: normal;
     color: grey;
 }
 
+/* all input selected under Formlayout class and adjusted accordingly */
 .Formlayout input {
     margin: 2%;
     width: 15%;
     border-color: brown;
     border-radius: 20px;
-    border-style:dotted;
+    border-style: dotted;
 }
 
+.Formlayout input::placeholder {
+    text-align:center;
+    font-family: monospace;
+    color:grey;
+    font-size: .80rem;
+}
+
+/* error message */
 .formError {
     color: red;
     font-size: 15px;
@@ -42,17 +58,29 @@ h1 {
 
 .optional {
     margin: 0;
-    font-size: 10px;
+    font-size: 0.5rem;
+    font-family: monospace;
     color: grey;
 }
 
-.edu_radio_selection{
-    font-size: 15px;
+.edu_radio_selection {
+    font-size: 1rem;
     color: grey;
 }
 
+/* selected specific id of address bar to increase width */
+#stu_address input {
+    width: 60%;
+}
+
+/* Added dotted border and same color as form class to look similer in Form */
 .Button {
-    /* margin: 20%; */
-    border-radius: 50px;
-    background-color: lightcoral;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    border-style: dotted;
+    border-color: brown;
+    font-family: monospace;
+    text-align: center;
+    text-shadow: 5px;
 }
