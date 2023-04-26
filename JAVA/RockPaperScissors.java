@@ -6,7 +6,7 @@ class game{
     int user_score=0;
     int com_score=0;
     int times=5;
-    //Default cont
+    //Default const
     game(){}
     //For user who want to play more than 5 times
     game(int times){
